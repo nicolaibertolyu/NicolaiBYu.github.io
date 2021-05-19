@@ -1,4 +1,4 @@
-# NicolaiBYu.github.io
+# nicolaibertolyu.github.io
 
 MelbUni INFO20005 Assignment 3
 
