@@ -1,0 +1,13 @@
+:root {
+    --colour-white: #FFFAF3;
+    --colour-gray: #333333;
+    background-color: var(--colour-white);
+}
+
+.white {
+    color: var(--colour-white)
+}
+
+.black {
+    color: var(--colour-gray)
+}

@@ -1,0 +1,29 @@
+img{
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.header{
+    background-color: var(--colour-gray);
+}
+
+.marquee{
+    padding: 3pt;
+    border-width: 0.1pt;
+}
+
+.marquee.black{
+    background-color: var(--colour-gray);
+    border-top-style: solid;
+    border-top-color: var(--colour-white);
+    border-bottom-style: solid; 
+    border-bottom-color: var(--colour-white);
+}
+
+.marquee.white{
+    background-color: var(--colour-white);
+    border-top-style: solid; 
+    border-top-color: var(--colour-gray);
+    border-bottom-style: solid;
+    border-bottom-color: var(--colour-gray);
+}

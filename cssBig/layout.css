@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.header{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+#headerTitle{
+    grid-column: 1;
+    margin: 1px 5px;
+}
+
+#headerUtility{
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1;
+}
+
+#search-id{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    flex-grow: 1;
+}
+
+.banner{
+    display:flex;
+    justify-content: space-between;
+    margin: 5px 0px 5px 15px;
+}
+
+#newArrivalsTitle{
+    display: flex;
+    justify-content: center;
+
+}
+
+#featuredProductsTitle{
+    display: flex;
+    justify-content: center;
+
+}
+
+#categoriesTitle{
+    display: flex;
+    justify-content: center;
+
+}
+
+#categoryList{
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(50px, 12%) );
+    gap: 75pt;
+
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;    
+}
+

@@ -1,0 +1,58 @@
+@import url("https://use.typekit.net/zvl4idw.css");
+h1{
+    font-family: balboa, sans-serif;
+    font-size: clamp(25pt, 4vw, 30pt);
+    font-weight: 500;
+    font-style: medium;
+    text-transform: uppercase;
+}
+
+#titleLink, #titleLink:hover, #titleLink:visited, #titleLink:active, #titleLink:link {
+    color: inherit;
+    text-decoration: none;
+   }
+
+h2{
+    font-family: barteldes-small, serif;
+    font-size: clamp(20pt, 4vw, 35pt);
+    font-weight: 400;
+    font-style: book;
+}
+
+h3{
+    font-family: balboa, sans-serif;
+    font-size: clamp(15pt, 3vw, 25pt);
+    font-weight: 500;
+    font-style: medium;
+    text-transform: uppercase;
+}
+
+h4{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: clamp(10pt, 2.5vw, 16pt);
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.marqueeText {
+    font-family: input-serif-compressed, serif;
+    font-size: clamp(6pt, 1vw, 9pt);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.footerTitle{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: clamp(10pt, 2.5vw, 16pt);
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.footerItem{
+    font-family: input-serif-compressed, serif;
+    font-size: clamp(9pt, 1.3vw, 12pt);
+    font-weight: 200;
+    font-style: normal;
+}

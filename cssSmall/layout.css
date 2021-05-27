@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.header{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#headerTitle{
+    grid-column: 1;
+    margin: 1px 5px;
+}
+
+#headerUtility{
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column-reverse wrap-reverse;
+}
+
+
+
+.banner{
+    display:flex;
+    justify-content: space-between;
+    margin: 5px 0px 5px 15px;
+}
+
+#categoryList{
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(50px, 1fr) );
+    gap: 75pt;
+
+}

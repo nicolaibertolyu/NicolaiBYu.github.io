@@ -1,0 +1,50 @@
+img.tank{
+    max-width: 10%;
+    max-height: 10%;
+}
+
+img.button{
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.header{
+    background-color: var(--colour-gray);
+}
+
+.marquee{
+    padding: 3pt;
+    border-width: 0.1pt;
+}
+
+.marquee.black{
+    background-color: var(--colour-gray);
+    border-top-style: solid;
+    border-top-color: var(--colour-white);
+    border-bottom-style: solid; 
+    border-bottom-color: var(--colour-white);
+}
+
+.marquee.white{
+    background-color: var(--colour-white);
+    border-top-style: solid; 
+    border-top-color: var(--colour-gray);
+    border-bottom-style: solid;
+    border-bottom-color: var(--colour-gray);
+}
+
+.categoryItem{
+    margin: 0pt 35pt 10pt 30pt;
+    width:150px;
+}
+
+.footer{
+    padding-top: 15pt;
+    background-color: var(--colour-gray);
+}
+
+.footerBlock{
+    margin: 10pt 35pt 10pt 30pt;
+    width: 150px;
+}
+
