@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB's Hobbies</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesBig.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="/stylesSmall.css" />
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    
+</head>
+<body onload="doShowAll()">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <header>
+        <div class="header sticky">
+            <h1 class="white" id="headerTitle"><a href="/index.html" id="titleLink">BB'S HOBBIES</a></h1>
+            <div id="headerUtility">
+                <div id="headerSearch">
+                    <input id="search-id" name="search-query" type="text" value="search..">
+                    <button class="search" type="submit"></button>
+                </div> 
+                    <a href="/pages/cart.html"><img class="button" src="/img/cart.png" alt="cart"></a>
+                    <a><img class="button" src="/img/burger.png" alt="menu"></a>
+            </div>
+        </div>
+        <div class="marquee white" id="myMarquee">
+            <p class="marqueeText black">MODEL KITS * RAIL * ELECTRONICS * BOOKS * JIGSAW PUZZLES * RC * DIORAMAS * TOOLS * TOYS * AND MORE</p>
+        </div>
+    </header>
+    <main>
+        <h3 id="cartTitle">CART</h3>
+        <div class="path">
+            <p class="pathText"><a href="/index.html">HOME</a> > <a href="/pages/cart.html">CART</a></p>
+        </div>
+        <div class="cartMain">
+            <div class="itemsList">
+                <div class="item">
+                    <div class="productPageImg">
+                        <img>
+                        <div class="productPageDetails">
+                            <div class="productPageDetails--singleItem">
+                                <input class="productPageName readonly" type="text" value="Electra 225 1962 Buick" name="name" readonly>
+                                <input class="productPagePriceSingle readonly" type="text" value="$49.95" name="price" readonly>
+                            </div>
+                            <div class="productPageDetails--multipleItems">
+                                <div class="itemCounter">
+                                    <input class="itemCounter--minus" type="button" value=" " onclick="SaveItem('gallerySlide--1')">
+                                    <input class="itemCounter--count readonly" type="text" value="1" name="price" readonly>
+                                    <input class="itemCounter--plus" type="button" value=" " onclick="SaveItem('gallerySlide--1')">
+                                </div>
+                                <input class="productPagePriceTotal readonly" type="text" value="$49.95" name="price" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cartCalculation">
+                <div id="items_table">
+                    <h2>Shopping List</h2>
+                    <table id="list"></table>
+                    <label><input type="button" value="Clear" onclick="ClearAll()">
+                    * Delete all items</label>
+                </div>
+            </div>
+        </div>
+        <div class="viewingHistory">
+            <h3 id="viewingHistoryTitle">Viewing History</h3>
+            <div class="gallerySlider">
+                <div class="gallerySlide" id="gallerySlide--1">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="/img/Products/06.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="Electra 225 1962 Buick" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$49.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--1')">
+                        </div>
+                    </form>
+                </div>
+                <div class="gallerySlide" id="gallerySlide--2">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="/img/Products/07.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="RESEDAGRÜN AMIG0003" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$4.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--2')">
+                        </div>
+                    </form> 
+                </div>
+                <div class="gallerySlide" id="gallerySlide--3">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="/img/Products/08.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="Datsun Truck Custom" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$64.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--3')">
+                        </div>
+                    </form>
+                </div>
+                <di class="gallerySlide"v id="gallerySlide--4">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="/img/Products/09.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="AMT Bobby Allison Monte Carlo Stock Car" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$54.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--4')">
+                        </div>
+                    </form>   
+                </di>
+                <div class="gallerySlide" id="gallerySlide--5">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="/img/Products/10.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="Aoshima Subaru Sambar" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$52.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--5')">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer">
+            <ul class="footerBlock">
+                <li class="footerTitle white">INFORMATION</li>
+                <li class="footerItem white"><a>About Us</a></li>
+                <li class="footerItem white"><a>FAQ</a></li>
+                <li class="footerItem white"><a>Privacy Statement</a></li>
+                <li class="footerItem white"><a>Terms of Service</a></li>
+            </ul>
+            <ul class="footerBlock">
+                <li class="footerTitle white">MY ACCOUNT</li>
+                <li class="footerItem white"><a>Login</a></li>
+                <li class="footerItem white"><a>Register</a></li>
+                <li class="footerItem white"><a>Order History</a></li>
+                <li class="footerItem white"><a>Shipping & Tracking</a></li>
+            </ul>
+            <ul class="footerBlock">
+                <li class="footerTitle white">CONTACT US</li>
+                <li class="footerItem white"><p>0412 054 573</p></li>
+                <li class="footerItem white"><p>161 Shakespare St</p></li>
+                <li class="footerItem white"><p>Mackay, QLD, 4740</p></li>
+                <li class="footerItem white"><p>info@bbshobbies.com.au</p></li>
+            </ul>
+            <ul class="footerBlock" id="footerBlock4">
+                <li class="footerTitle white">OPENING HOURS</li> 
+                <li class="footerItem white"><p>Weekdays:</p><p>9:30am - 5:30pm</p></li>
+                <li class="footerItem white"><p>Saturday:</p><p>9:00am - 2:00pm</p></li>
+                <li class="footerItem white"><p>Sunday:</p>9:00am - 1:00pm</li>
+            </ul>
+        </ul>
+        <div class="marquee black" id="myMarquee">
+            <p class="marqueeText white">MODEL KITS * RAIL * ELECTRONICS * BOOKS * JIGSAW PUZZLES * RC * DIORAMAS * TOOLS * TOYS * AND MORE</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -14,28 +14,64 @@ html {
 
 #headerTitle{
     grid-column: 1;
-    margin: 1px 5px;
+    margin: 4px 10px;
+    white-space: nowrap;
+}
+
+#headerSearch{
+    background-color: var(--colour-white);
+    border-radius: 10pt;
+    margin-top: -3pt;
+    margin-right: 30pt;
+    height: 25pt;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sticky{
+    z-index: 10000;
+    width: 100%;
+    position: fixed; 
+    position: -webkit-sticky;
+    top: 0;
+}
+
+#search-id{
+    border: 0;
+    padding-left: 10pt;
+    margin: 0;
+    background: transparent;
+    flex-grow: 1;
+}
+
+input, button, submit { border:none; } 
+
+button.search{
+    background: transparent url(../img/search.png);
+    background-size: 20pt;
+    background-repeat: no-repeat;
+    width: 18%;
+    height: 50%;
+    padding: 13pt;
+    margin-right: 1pt;
+    margin-top: 2pt;
 }
 
 #headerUtility{
     grid-column: 2;
     display: flex;
     justify-content: flex-end;
-    margin-top: 1;
+    margin-top: 13px;
 }
 
-#search-id{
-    border: 0;
-    padding: 0;
-    margin: 0;
-    background: transparent;
-    flex-grow: 1;
+main{
+    margin-top: clamp(47px, 5.4vw, 55px);
 }
 
 .banner{
     display:flex;
     justify-content: space-between;
-    margin: 5px 0px 5px 15px;
+    margin: 50px 0px 5px 15px;
 }
 
 #newArrivalsTitle{
@@ -47,20 +83,34 @@ html {
 #featuredProductsTitle{
     display: flex;
     justify-content: center;
-
+    margin-top: 8vw;
+    margin-bottom: 4vw;
 }
 
 #categoriesTitle{
     display: flex;
     justify-content: center;
-
+    margin-bottom: 4vw;
 }
 
 #categoryList{
     display: grid;
     grid-template-columns: repeat( auto-fill, minmax(50px, 12%) );
-    gap: 75pt;
+    gap: 50pt;
+    overflow: hidden;
 
+}
+
+#cartTitle{
+    padding-left: 20pt;
+}
+
+.pathText{
+    padding-left: 20pt;
+}
+
+#viewingHistoryTitle{
+    padding-left: 20pt;
 }
 
 .footer {

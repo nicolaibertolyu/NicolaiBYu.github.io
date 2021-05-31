@@ -21,18 +21,57 @@ h2{
 
 h3{
     font-family: balboa, sans-serif;
-    font-size: clamp(15pt, 3vw, 25pt);
+    font-size: clamp(20pt, 4vw, 32pt);
     font-weight: 500;
     font-style: medium;
     text-transform: uppercase;
 }
 
-h4{
+h3 a, h3 a:hover, h3 a:visited, h3 a:active, h3 a:link{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+h4, h4:hover, h4:visited, h4:active, h4:link{
     font-family: neue-haas-grotesk-display, sans-serif;
     font-size: clamp(10pt, 2.5vw, 16pt);
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
+    color: var(--colour-gray);
+    text-decoration: none;
+}
+
+#search-id{
+    font-family: input-serif-compressed, serif;
+    font-size: clamp(9pt, 1.3vw, 12pt);
+    font-weight: 200;
+    font-style: normal;
+}
+
+.productName{
+    font-family: input-serif-compressed, serif;
+    font-size: clamp(12pt, 2.5vw, 20pt);
+    font-weight: 200;
+    font-style: normal;
+}
+
+.productPrice{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: clamp(12pt, 2.5vw, 20pt);
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    color: var(--colour-gray);
+    text-decoration: none; 
+}
+
+.productPageName{
+    font-family: input-serif-compressed, serif;
+    font-size: clamp(15pt, 3.5vw, 25pt);
+    font-weight: 200;
+    font-style: normal;
 }
 
 .marqueeText {
@@ -55,4 +94,8 @@ h4{
     font-size: clamp(9pt, 1.3vw, 12pt);
     font-weight: 200;
     font-style: normal;
+}
+
+input:focus, select:focus{
+    outline: none;
 }

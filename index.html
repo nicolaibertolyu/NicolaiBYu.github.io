@@ -8,21 +8,22 @@
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" type="text/css" href="stylesBig.css">
     <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="stylesSmall.css" />
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
 
 </head>
-<body>
+<body onload="doShowAll()">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
     <header>
         <div class="header sticky">
             <h1 class="white" id="headerTitle"><a href="index.html" id="titleLink">BB'S HOBBIES</a></h1>
             <div id="headerUtility">
                 <div id="headerSearch">
                     <input id="search-id" name="search-query" type="text" value="search..">
-                    <button type="submit"><img src="img/search.png"></button>
+                    <button class="search" type="submit"></button>
                 </div> 
-                    <a><img class="button" src="img/cart.png"></a>
-                    <a><img class="button" src="img/burger.png"></a>
+                    <a href="/pages/cart.html"><img class="button" src="img/cart.png" alt="cart"></a>
+                    <a><img class="button" src="img/burger.png" alt="menu"></a>
             </div>
         </div>
         <div class="banner">
@@ -30,32 +31,109 @@
             <img class=tank src="img/tank_logo.png">
         </div>
         <div class="marquee white" id="myMarquee">
-            <p class="marqueeText black"> RADIO CONTROL * COLLECTABLES * PUZZLES * TRAINS * SCALE MODELS *</p>
+            <p class="marqueeText black">MODEL KITS * RAIL * ELECTRONICS * BOOKS * JIGSAW PUZZLES * RC * DIORAMAS * TOOLS * TOYS * AND MORE</p>
         </div>
     </header>
     <main>
         <div class="newArrivals">
-            <h3 id="newArrivalsTitle">New Arrivals</h3>
+            <h3 id="newArrivalsTitle"><a href="pages/category.html">New Arrivals</a></h3>
+            <ul class="newArrivalsList">
+                <li class="shadow"><a href="pages/product.html"><img class="newArrivalsImg--1" src="/img/Products/01.jpg"></a></li>
+                <li class="shadow"><a href="pages/product.html"><img class="newArrivalsImg--2" src="/img/Products/02.jpg"></a></li>
+                <li class="shadow"><a href="pages/product.html"><img class="newArrivalsImg--3" src="/img/Products/03.jpg"></a></li>
+                <li class="shadow"><a href="pages/product.html"><img class="newArrivalsImg--4" src="/img/Products/04.jpg"></a></li>
+                <li class="shadow"><a href="pages/product.html"><img class="newArrivalsImg--5" src="/img/Products/05.jpg"></a></li>            
+            </ul>
         </div>
         <div class="featuredProducts">
             <h3 id="featuredProductsTitle">Featured Products</h3>
+            <div class="gallerySlider">
+                <div class="gallerySlide" id="gallerySlide--1">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="img/Products/06.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="Electra 225 1962 Buick" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$49.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--1')">
+                        </div>
+                    </form>
+                </div>
+                <div class="gallerySlide" id="gallerySlide--2">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="img/Products/07.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="RESEDAGRÜN AMIG0003" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$4.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--2')">
+                        </div>
+                    </form> 
+                </div>
+                <div class="gallerySlide" id="gallerySlide--3">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="img/Products/08.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="Datsun Truck Custom" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$64.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--3')">
+                        </div>
+                    </form>
+                </div>
+                <di class="gallerySlide"v id="gallerySlide--4">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="img/Products/09.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="AMT Bobby Allison Monte Carlo Stock Car" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$54.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--4')">
+                        </div>
+                    </form>   
+                </di>
+                <div class="gallerySlide" id="gallerySlide--5">
+                    <a class="galleryImg" href="/pages/product.html">    
+                        <img class="productImg" src="img/Products/10.jpg">
+                    </a>
+                    <form class="productUnit" name="cart" action="/pages/cart.html" method="POST">
+                            
+                        <input class="productName readonly" type="text" value="Aoshima Subaru Sambar" name="name" readonly>
+                        <div class="productPriceCart">
+                            <input class="productPrice readonly" type="text" value="$52.95" name="price" readonly>
+                            <input class="addCartButton" type="button" value=" " onclick="SaveItem('gallerySlide--5')">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="pedestal">
+                <img class="pedestalImg" src="/img/pedestal.png">
+            </div>
         </div>
         <div class="marquee white" id="myMarquee">
-            <p class="marqueeText black"> RADIO CONTROL * COLLECTABLES * PUZZLES * TRAINS * SCALE MODELS *</p>
+            <p class="marqueeText black">FOR ALL YOUR HOBBY NEEDS * FOR ALL YOUR HOBBY NEEDS * FOR ALL YOUR HOBBY NEEDS * FOR ALL YOUR HOBBY NEEDS</p>
         </div>
         <div class="categories">
             <h3 id="categoriesTitle">Categories</h3>
             <ul id="categoryList">
-                <li class="categoryItem"><a><img><h4>Model Kits</h4></a></li>
-                <li class="categoryItem"><a><img><h4>Rail</h4></a></li>
-                <li class="categoryItem"><a><img><h4>Electronics</h4></a></li>
-                <li class="categoryItem"><a><img><h4>Books</h4></a></li>
-                <li class="categoryItem"><a><img><h4>Jigsaw Puzzle</h4></a></li>
-                <li class="categoryItem"><a><img><h4>RC</h4></a></li>
-                <li class="categoryItem"><a><img><h4>Dioramas</h4></a></li>
-                <li class="categoryItem"><a><img><h4>Tools</h4></a></li>
-                <li class="categoryItem"><a><img><h4>Misc.</h4></a></li>
-                <li class="categoryItem"><a><img><h4>Toys</h4></a></li> 
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/modelkit.png"><h4>Model Kits</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/rail.png"><h4>Rail</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/electronics.png"><h4>Electronics</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/books.png"><h4>Books</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/puzzles.png"><h4>Jigsaw Puzzles</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/rc.png"><h4>RC</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/dioramas.png"><h4>Dioramas</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/tools.png"><h4>Tools</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/misc.png"><h4>Misc.</h4></a></li>
+                <li class="categoryItem"><a href="pages/category.html"><img class="categoryImg" src="/img/Categories/toys.png"><h4>Toys</h4></a></li> 
             </ul>
         </div>
     </main>
@@ -90,7 +168,7 @@
             </ul>
         </ul>
         <div class="marquee black" id="myMarquee">
-            <p class="marqueeText white"> RADIO CONTROL * COLLECTABLES * PUZZLES * TRAINS * SCALE MODELS *</p>
+            <p class="marqueeText white">MODEL KITS * RAIL * ELECTRONICS * BOOKS * JIGSAW PUZZLES * RC * DIORAMAS * TOOLS * TOYS * AND MORE</p>
         </div>
     </footer>
 </body>
