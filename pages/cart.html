@@ -26,43 +26,62 @@
                     <a><img class="button" src="/img/burger.png" alt="menu"></a>
             </div>
         </div>
-        <div class="marquee white" id="myMarquee">
-            <p class="marqueeText black">MODEL KITS * RAIL * ELECTRONICS * BOOKS * JIGSAW PUZZLES * RC * DIORAMAS * TOOLS * TOYS * AND MORE</p>
-        </div>
     </header>
     <main>
+        <div class="marquee white">
+            <p class="marqueeText black">MODEL KITS * RAIL * ELECTRONICS * BOOKS * JIGSAW PUZZLES * RC * DIORAMAS * TOOLS * TOYS * AND MORE</p>
+        </div>
         <h3 id="cartTitle">CART</h3>
         <div class="path">
             <p class="pathText"><a href="/index.html">HOME</a> > <a href="/pages/cart.html">CART</a></p>
         </div>
         <div class="cartMain">
-            <div class="itemsList">
-                <div class="item">
+            <div class="cartItemsList">
+                <div class="cartItem">
                     <div class="productPageImg">
-                        <img>
-                        <div class="productPageDetails">
-                            <div class="productPageDetails--singleItem">
-                                <input class="productPageName readonly" type="text" value="Electra 225 1962 Buick" name="name" readonly>
-                                <input class="productPagePriceSingle readonly" type="text" value="$49.95" name="price" readonly>
-                            </div>
-                            <div class="productPageDetails--multipleItems">
-                                <div class="itemCounter">
-                                    <input class="itemCounter--minus" type="button" value=" " onclick="SaveItem('gallerySlide--1')">
+                        <img class="productPageImg" src="/img/Products/06.jpg">
+                    </div>
+                    <div class="productPageDetails">
+                        <div class="productPageDetails--singleItem">
+                            <input class="productPageName readonly" type="text" value="Electra 225 1962 Buick" name="name" readonly>
+                            <input class="productPagePriceSingle readonly" type="text" value="$49.95" name="price" readonly>
+                        </div>
+                        <div class="stockCheck"><p class="stockText inStock">In Stock</p></div>
+                        <div class="productPageDetails--multipleItems">
+                            <div class="itemCounter">
+                                    <input class="itemCounter--minus" type="button" value=" " onclick="minusCount()">
                                     <input class="itemCounter--count readonly" type="text" value="1" name="price" readonly>
-                                    <input class="itemCounter--plus" type="button" value=" " onclick="SaveItem('gallerySlide--1')">
-                                </div>
-                                <input class="productPagePriceTotal readonly" type="text" value="$49.95" name="price" readonly>
+                                    <input class="itemCounter--plus" type="button" value=" " onclick="plusCount()">
                             </div>
+                            <input class="productPagePriceTotal readonly" type="text" value="$49.95" name="price" readonly>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="cartCalculation">
-                <div id="items_table">
-                    <h2>Shopping List</h2>
-                    <table id="list"></table>
-                    <label><input type="button" value="Clear" onclick="ClearAll()">
-                    * Delete all items</label>
+                <!-- in hindsight, shouldve just used a 
+                <table> but no time to change it -->
+                <div id="costTable">
+                    <div class="costTableRow" id="tableSubTotal">
+                        <h5>Sub-Total</h5>
+                        <input class="costTablePrice readonly" id="tableSubTotal--price" type="text" value="$49.95" name="price" readonly>
+                    </div>
+                    <div class="costTableRow" id="tableGST">
+                        <h5>GST</h5> 
+                        <input class="costTablePrice readonly" id="tableGST--price" type="text" value="$0.00" name="price" readonly>
+                    </div>
+                    <div class="costTableRow" id="tableShipping">
+                        <h5>Shipping</h5> 
+                        <input class="costTablePrice readonly" id="tableShipping--price" type="text" value="$20.00" name="price" readonly>
+                    </div>
+                    <div class="costTableRow" id="tableTotal">
+                        <h6>Total</h6>
+                        <input class="costTablePrice readonly" id="tableTotal--price" type="text" value="$69.95" name="price" readonly>
+                    </div>
+                </div>
+                <div class="costButtons">
+                    <input class="costButton" type="button" value="CALCULATE">
+                    <a class="costButton" id="checkoutButton" href="/pages/checkout.html"><p id="checkoutButtonText">CHECKOUT</p></a>
                 </div>
             </div>
         </div>

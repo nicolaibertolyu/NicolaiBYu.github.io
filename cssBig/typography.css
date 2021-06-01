@@ -69,7 +69,7 @@ h4, h4:hover, h4:visited, h4:active, h4:link{
 
 .productPageName{
     font-family: input-serif-compressed, serif;
-    font-size: clamp(15pt, 3.5vw, 25pt);
+    font-size: clamp(12pt, 3vw, 20pt);
     font-weight: 200;
     font-style: normal;
 }
@@ -98,4 +98,71 @@ h4, h4:hover, h4:visited, h4:active, h4:link{
 
 input:focus, select:focus{
     outline: none;
+}
+
+.pathText { 
+    font-family: "Segoe UI"; 
+    font-size: clamp(9pt, 1.5vw, 12pt);; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 15.4px; 
+}
+
+.productPagePriceSingle { 
+    font-family: "Segoe UI"; 
+    font-size: clamp(12pt, 1.6vw, 14pt);; 
+    font-style: semibold; 
+    font-variant: normal; 
+    font-weight: 450; 
+    line-height: 15.4px; 
+}
+
+.stockText { 
+    font-family: "Segoe UI"; 
+    font-size: clamp(9pt, 1.6vw, 12pt);; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 15.4px; 
+}
+
+.inStock{
+    color: rgb(26, 139, 83);
+}
+
+.itemCounter--count{
+    font-family: "Segoe UI"; 
+    font-size: clamp(10pt, 1.6vw, 14pt);; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 15.4px; 
+}
+
+.productPagePriceTotal { 
+    font-family: "Segoe UI"; 
+    font-size: clamp(14pt, 1.8vw, 17pt);; 
+    font-style: bold; 
+    font-variant: normal; 
+    font-weight: 600; 
+    line-height: 15.4px; 
+}
+
+#costTable, h5 { 
+    font-family: "Segoe UI"; 
+    font-size: clamp(12pt, 1.6vw, 14pt);; 
+    font-style: semibold; 
+    font-variant: normal; 
+    font-weight: 500; 
+    line-height: 15.4px; 
+}
+
+#tableTotal, h6{
+    font-family: input-serif-compressed, serif;
+    font-size: clamp(14pt, 1.8vw, 17pt);; 
+    font-style: bold; 
+    font-variant: normal; 
+    font-weight: 600; 
+    line-height: 15.4px; 
 }
