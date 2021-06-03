@@ -20,7 +20,7 @@
             <div id="headerUtility">
                 <div id="headerSearch">
                     <input id="search-id" name="search-query" type="text" value="search..">
-                    <button class="search" type="submit"></button>
+                    <button for="search-query" class="search" type="submit"></button>
                 </div> 
                     <a href="/pages/cart.html"><img class="button" src="/img/cart.png" alt="cart"></a>
                     <a><img class="button" src="/img/burger.png" alt="menu"></a>
@@ -31,23 +31,23 @@
         <div class="marquee white">
             <p class="marqueeText black">MODEL KITS * RAIL * ELECTRONICS * BOOKS * JIGSAW PUZZLES * RC * DIORAMAS * TOOLS * TOYS * AND MORE</p>
         </div>
-        <h3 id="cartTitle">CART</h3>
+        <h3 class="pageTitle">CART</h3>
         <div class="path">
             <p class="pathText"><a href="/index.html">HOME</a> > <a href="/pages/cart.html">CART</a></p>
         </div>
-        <div class="cartMain">
-            <div class="cartItemsList">
+        <div class="pageMain">
+            <div class="pageLeft">
                 <div class="cartItem">
-                    <div class="productPageImg">
-                        <img class="productPageImg" src="/img/Products/06.jpg">
+                    <div class="cartPageImg">
+                        <a href="/pages/product.html"><img class="cartPageImg" src="/img/Products/06.jpg"></a>
                     </div>
-                    <div class="productPageDetails">
-                        <div class="productPageDetails--singleItem">
+                    <div class="cartPageDetails">
+                        <div class="cartPageDetails--singleItem">
                             <input class="productPageName readonly" type="text" value="Electra 225 1962 Buick" name="name" readonly>
                             <input class="productPagePriceSingle readonly" type="text" value="$49.95" name="price" readonly>
                         </div>
                         <div class="stockCheck"><p class="stockText inStock">In Stock</p></div>
-                        <div class="productPageDetails--multipleItems">
+                        <div class="cartPageDetails--multipleItems">
                             <div class="itemCounter">
                                     <input class="itemCounter--minus" type="button" value=" " onclick="minusCount()">
                                     <input class="itemCounter--count readonly" type="text" value="1" name="price" readonly>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cartCalculation">
+            <div class="pageRight">
                 <!-- in hindsight, shouldve just used a 
                 <table> but no time to change it -->
                 <div id="costTable">
