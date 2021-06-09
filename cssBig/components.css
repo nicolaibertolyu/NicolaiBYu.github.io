@@ -11,8 +11,9 @@ img.tank{
 }
 
 img.button{
-    max-height: 60%;
-    max-width: 60%;
+    max-height: 75%;
+    max-width: 75%;
+    margin-right: 5pt;
 }
 
 .header{
@@ -599,7 +600,7 @@ img.cartPageImg{
     overflow: hidden;
 }
 
-.listingUnit{
+.listingUnit, .productUnit{
     width: clamp(70px, 30vw, 190px);
     height: clamp(80px, 60vw, 200px);
     padding: 15pt;
@@ -610,14 +611,12 @@ img.cartPageImg{
     height: clamp(120px, 60vw, 200px);
 }
 
-
-
 .productPriceCart.category{
     padding-left: 10pt;
 }
 
 
-.addCartButton.category{
+.addCartButton{
     margin-left: -100%;
     margin-right: -15pt;
     margin-top: 18pt;
