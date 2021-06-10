@@ -216,3 +216,12 @@ input:focus, select:focus{
     text-transform: none;
     font-weight: 600; 
 }
+
+.checkoutInputLabel { 
+    font-family: "Segoe UI"; 
+    font-size: clamp(12pt, 1.5vw, 15pt);; 
+    font-style: bold; 
+    font-variant: normal; 
+    font-weight: 600; 
+    line-height: 15.4px; 
+}

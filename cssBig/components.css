@@ -574,6 +574,21 @@ img.cartPageImg{
 
 }  
 
+#cartButton, #cartButton:hover, #cartButton:visited, #cartButton:active, #cartButton:link, #cartButton:focus{
+    background-color: var(--colour-white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    border: 0.1pt solid var(--colour-gray);
+    outline: none;
+}
+
+#cartButtonText, #cartButtonText:hover, #cartButtonText:visited, #cartButtonText:active, #cartButtonText:link, #cartButtonText:focus{
+    text-align: center;
+    color: var(--colour-gray);
+}  
+
 /* CATEGORY PAGE STYLES */
 
 .pageMain.category{
@@ -678,3 +693,41 @@ img.cartPageImg{
 
 /* CHECKOUT STYLES */
 
+.billingDetails{
+    display: flex;
+    justify-content:flex-start;
+    flex-flow: row wrap;
+}
+
+.billingDetailsBlock{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+.billingDetailSection{
+    margin-bottom: 1pt;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.checkoutForm{
+    padding-left: 20pt;
+    margin-bottom: 20pt;
+}
+
+.checkoutInput{
+    background-color: white;
+    border: 0.1pt solid var(--colour-gray);
+    border-radius: 10pt;
+    height: 25pt;
+    margin-top: 5pt;
+    margin-right: 20pt;
+}
+
+.checkoutInputLabel{
+    padding-top: 10pt;
+}
+
+.orderSummaryTitle{
+    padding-left: 20pt;
+}

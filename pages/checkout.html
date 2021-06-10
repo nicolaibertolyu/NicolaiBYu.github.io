@@ -39,37 +39,41 @@
                 <form class="checkoutForm" name="checkout" action="/pages/checkout.html" method="POST">
                     <div class="billingDetailsTitle"><h3 class="subtitle">Billing Details:</h3></div>
                     <div class="billingDetails">
-                        <div class="streetAddress">
-                            <label for="streetAddress1">Street Address: *</label>
-                            <input type="text" class="checkoutInput" name="streetAddress1" value="house number and street name">
-                            <input type="text" class="checkoutInput" name="streetAddress2" value="apartment, suite, unit (optional)">
+                        <div class="billingDetailsBlock">
+                            <div class="billingDetailSection" id="streetAddress">
+                                <label class="checkoutInputLabel" for="streetAddress1">Street Address: *</label>
+                                <input type="text" class="checkoutInput" name="streetAddress1" value="house number and street name">
+                                <input type="text" class="checkoutInput" name="streetAddress2" value="apartment, suite, unit (optional)">
+                            </div>
+                            <div class="billingDetailSection" id="suburb">
+                                <label class="checkoutInputLabel" for="suburb">Suburb: *</label>
+                                <input type="text" class="checkoutInput" name="suburb" value="">
+                            </div>
+                            <div class="billingDetailSection" id="state">
+                                <label class="checkoutInputLabel" for="state">State: *</label>
+                                <input type="text" class="checkoutInput" name="state" value="">
+                            </div>
+                            <div class="billingDetailSection" id="postcode">
+                                <label class="checkoutInputLabel" for="postcode">Postcode: *</label>
+                                <input type="text" class="checkoutInput" name="postcode" value="">
+                            </div>
                         </div>
-                        <div class="suburb">
-                            <label for="suburb">Suburb: *</label>
-                            <input type="text" class="checkoutInput" name="suburb" value="">
-                        </div>
-                        <div class="state">
-                            <label for="state">State: *</label>
-                            <input type="text" class="checkoutInput" name="state" value="">
-                        </div>
-                        <div class="postcode">
-                            <label for="postcode">Postcode: *</label>
-                            <input type="text" class="checkoutInput" name="postcode" value="">
-                        </div>
-                        <div class="name">
-                            <label for="firstName">First Name: *</label>
-                            <input type="text" class="checkoutInput" name="firstName" value="">
-                            <label for="lastName">Last Name: *</label>
-                            <input type="text" class="checkoutInput" name="lastName" value="">
-                        </div>
-                        <div class="email">
-                            <label for="email">Email: *</label>
-                            <input type="email" class="checkoutInput" name="email" value="">
-                        </div>
-                        <div class="phone">
-                            <label for="phone">Phone Number: *</label>
-                            <input type="number" class="checkoutInput" name="phone" value="">
-                        </div>
+                        <div class="billingDetailsBlock">
+                            <div class="billingDetailSection" id="name">
+                                <label class="checkoutInputLabel" for="firstName">First Name: *</label>
+                                <input type="text" class="checkoutInput" name="firstName" value="">
+                                <label class="checkoutInputLabel" for="lastName">Last Name: *</label>
+                                <input type="text" class="checkoutInput" name="lastName" value="">
+                            </div>
+                            <div class="billingDetailSection" id="email">
+                                <label class="checkoutInputLabel" for="email">Email: *</label>
+                                <input type="email" class="checkoutInput" name="email" value="">
+                            </div>
+                            <div class="billingDetailSection" id="phone">
+                                <label class="checkoutInputLabel" for="phone">Phone Number: *</label>
+                                <input type="number" class="checkoutInput" name="phone" value="">
+                            </div>
+                       </div>
                     </div>
                 </form>
             </div>
@@ -95,8 +99,8 @@
                         </div>
                     </div>
                     <div class="costButtons">
-                        <input class="costButton" type="button" value="CALCULATE">
-                        <a class="costButton" id="checkoutButton" href="/pages/checkout.html"><p id="checkoutButtonText">CHECKOUT</p></a>
+                        <a class="costButton" id="cartButton" href="/pages/cart.html"><p id="cartText">CART</p></a>
+                        <a class="costButton" id="checkoutButton" href="#"><p id="checkoutButtonText">PROCEED</p></a>
                     </div>
             </div>
         </div>
